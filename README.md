@@ -1,1 +1,5 @@
 # ebook
+
+## License
+
+Apache License
