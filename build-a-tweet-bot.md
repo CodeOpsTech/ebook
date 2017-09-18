@@ -1,5 +1,7 @@
 # Serverless Event Processing: Building a TweetBot 
 
+<p align = "right"><font size = "2">- Srushith & Ganesh Smarthyam</font></p>
+
 <p align = "center"><font size = "4"><i><b>"By 2022, most platform as a service (PaaS) offerings will evolve to a fundamentally serverless model, rendering the cloud platform architectures dominating in 2017 as legacy architectures” - Gartner</i></b></font></p>
 
 In September OSFY article, we demystified serverless computing. We also discussed pros and cons, technologies, use cases and challenges, etc. How about using serverless computing to simplify or automate your tasks? For example, wouldn’t it be nice to automatically retweet the tweets that has your favourite hashtags (such as #serverless or #opensource). That’s the topic we take up for this month’s article. We are going to implement a bot (let’s call it TweetBot) in which you can specify the hashtags to retweet in specified time intervals.  
