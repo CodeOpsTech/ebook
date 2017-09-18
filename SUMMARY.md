@@ -1,6 +1,6 @@
 * Table of Contents
 
-* [Serverless Event Processing: Building a Tweet Bot](https://github.com/CodeOpsTech/ebook/blob/master/docs/build-a-tweet-bot.md) 
-  - By [Srushith](https://twitter.com/SrushithR) & [Ganesh](https://twitter.com/GSamarthyam) 
-* [Serverless Architectures: Demystifying Serverless Computing](https://github.com/CodeOpsTech/ebook/blob/master/demystify-serverless-computing.md) 
-  - By [Manoj](), [Srushith](https://twitter.com/SrushithR) & [Ganesh](https://twitter.com/GSamarthyam)
+* [Building a Tweet Bot](build-a-tweet-bot.md) 
+  - [Srushith](https://twitter.com/SrushithR) & [Ganesh](https://twitter.com/GSamarthyam) 
+* [Demystifying Serverless Computing](demystify-serverless-computing.md) 
+  - [Manoj](https://in.linkedin.com/in/manojg), [Srushith](https://twitter.com/SrushithR) & [Ganesh](https://twitter.com/GSamarthyam)
