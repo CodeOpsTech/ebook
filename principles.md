@@ -21,6 +21,18 @@ Serverless functions are designed to execute for short periods of time (e.g., ma
 
 * Embrace third-party services
 
+## The Serverless Computing Manifesto by Rowan Udell  
+
+* Function are the unit of deployment and scaling.
+* No machines, VMs, or containers visible in the programming model.
+* Permanent storage lives elsewhere.
+* Scales per request; Users cannot over- or under-provision capacity.
+* Never pay for idle (no cold servers/containers or their costs).
+* Implicitly fault-tolerant because functions can run anywhere.
+* BYOC - Bring Your Own Code.
+* Metrics and logging are a universal right.
+
+
 ## Benefits
 
 * Based on "pay as you go” model
