@@ -14,7 +14,7 @@ In this article, start with writing an auto-retweeting code in Python and get it
 
 For writing the Python code for auto-retweeting, the prerequisite is that Python 3 is installed in your machine. 
 
-The Twitter API provides programmatic access to read and write Twitter data, create a new tweet, read user profile and follower data, retweet, and more. For this, first you should must create a Twitter application (see https://dev.twitter.com/) and note down the OAuth credentials for the bot configuration.
+The Twitter API provides programmatic access to read and write Twitter data, create a new tweet, read user profile and follower data, retweet, and more. For this, first you should must create a Twitter application (see https://apps.twitter.com/) and note down the OAuth credentials for the bot configuration.
 
 The Twitter API in Python can be accessed using TwitterFollowBot Python module. Using this module, you can do much more than just retweeting like auto-following, auto-liking. For developing TwitterBot, you must install the module into a folder rather than the default bin directory. For that, use the following command:
 
