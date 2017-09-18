@@ -1,7 +1,8 @@
 # Serverless Event Processing: Building a TweetBot 
 
+<br>
 
-<p align = "center"><i>"By 2022, most platform as a service (PaaS) offerings will evolve to a fundamentally serverless model, rendering the cloud platform architectures dominating in 2017 as legacy architectures” - Gartner</i></p>
+<p align = "center"><font size = "4"><i><b>"By 2022, most platform as a service (PaaS) offerings will evolve to a fundamentally serverless model, rendering the cloud platform architectures dominating in 2017 as legacy architectures” - Gartner</i></b></font></p>
 
 <br>
 
