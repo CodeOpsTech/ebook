@@ -173,11 +173,11 @@ The moment the action was invoked, your Twitter account would have retweeted the
 Periodic trigger would be the best option. It triggers the action based on a specific time and will retweet the latest tweets with ‘#Serverless’ in it. One can either choose a pattern or write a cron expression.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/19647546/30533764-b2c9d85c-9c78-11e7-8fff-8267e56fc65b.PNG" />
+  <img src="https://user-images.githubusercontent.com/19647546/30535021-40b97488-9c7e-11e7-9322-6ff48098e39d.PNG" />
 </p>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/19647546/30533769-b87c980c-9c78-11e7-8cf7-df42ab59a0c3.PNG" />
+  <img src="https://user-images.githubusercontent.com/19647546/30535065-7bc25338-9c7e-11e7-926d-d5581727bf43.PNG" />
 </p>
  
 The above pattern will invoke the TweetBot action every weekday (Monday to Friday) every 6 hours keeping your twitter account live without your intervention!  
