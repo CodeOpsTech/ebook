@@ -1,5 +1,6 @@
 * Table of Contents
 
+* [Quotations](serverless-quotes.md)
 * [Abstracts](abstracts.md)
 * [Principles](principles.md)
 * [Framework & Tools](frameworks-tools.md)
