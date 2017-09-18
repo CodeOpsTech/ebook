@@ -59,7 +59,7 @@ retweet()
 
 That’s short and sweet code! Let’s save it as “test.py” file and run it. 
 
-
+![capture](https://user-images.githubusercontent.com/19647546/30533093-313de8e4-9c75-11e7-934e-f1c0afde938d.PNG)
 
 When you execute the Python script, it connects to the Twitter API and retweets. The result throws up a warning indicating that the “followers.txt” isn’t updated; you can just ignore that warning or update the files to get rid of the warning. The program displays the tweets that was retweeted, so we know it is working.  
 
@@ -75,15 +75,14 @@ You can run OpenWhisk on your laptop, on-premise, or in the cloud. When running 
 
 ### Some key aspects about OpenWhisk:
 
+![openwhisk](https://user-images.githubusercontent.com/19647546/30533107-442e44b2-9c75-11e7-8103-ad1288f3544f.PNG)
 
 It's open source. If you want, you can explore the code and tinker with it and change it according to your requirements 
 Support for a wide range of programming languages including Node.js 6, Python 3, PHP 7.1 and Swift 3.1.1
 Actions (serverless functions) can also be custom executable programs packaged in a Docker container, i.e., you can run Docker images in OpenWhisk
 Run it locally! None of the major serverless platforms provide this feature. You can build and run actions locally on your own hardware behind your own firewall and then deploy to execute in the cloud 
 
-
-
-
+![capture1](https://user-images.githubusercontent.com/19647546/30533442-f9eff02e-9c76-11e7-8199-b25d34ba6cac.PNG)
 
 ## TweetBot using OpenWhisk
 
@@ -91,7 +90,7 @@ For using TweetBot in serverless approach, you need to install OpenWhisk in your
 
 The beauty of serverless technology is that you don’t have to rewrite your entire application to go serverless: just tweak the plain code that runs in your machine and you’ll be fine! Surprisingly, our TweetBot requires only one change - it should have a main function with an input parameter (dictionary type) and is to be saved as a __main__.py file. 
  
- 
+ ![capture2](https://user-images.githubusercontent.com/19647546/30533454-0266ec44-9c77-11e7-8b30-13197ad57c18.PNG)
 
 Here is the modified Python code:
 
@@ -118,60 +117,45 @@ Now, save this Python code in a file named “__main__.py”. Create the “conf
 
 Once the wsk CLI (Command Line Interface) is installed and the zip file is ready, follow these steps:
 
+![process](https://user-images.githubusercontent.com/19647546/30533462-0e66b4d4-9c77-11e7-88d9-e8a8502fdb77.PNG)
+
 ### Step 1. Create & update an action:
 	Log in to the IBM Bluemix account (https://console.bluemix.net/openwhisk/) and 
-	create a new action. You can upload the zip files with dependencies only via the
-CLI:
+	create a new action. You can upload the zip files with dependencies only via the CLI:
+	
 	Syntax: wsk action create <action-name> --kind <language:version> <file_name>
-	Sample Command: wsk action create tweetBot --kind python:3 OpenWhisk.zip	
-
+	Sample Command: wsk action create tweetBot --kind python:3 OpenWhisk.zip
+	
+![commands](https://user-images.githubusercontent.com/19647546/30533480-25aaf466-9c77-11e7-85d0-6fb132c28878.PNG)
 
 ### Step 2. Invoke the function (non-blocking mode):
 	Syntax: wsk action invoke <action-name>
 	Sample Command: wsk action invoke tweetBot 
 
-
+![comma](https://user-images.githubusercontent.com/19647546/30533483-2991b128-9c77-11e7-9317-4b33e55a65e1.PNG)
 
 ### Step 3. Check for the result:
 Since we invoked the function in a non-blocking mode (because we haven’t added the ‘--blocking’ parameter), the command returned immediately, but it is executing in the background. 
 	Syntax: wsk activation result <action ID> 
 	Sample Command: wsk activation result f4df0d1dcb12488396978d2cda832b09
 
-
+![comman](https://user-images.githubusercontent.com/19647546/30533487-2dfcd13e-9c77-11e7-95ec-4209dc183721.PNG)
 
 #### 4.	Check out the logs:
 	Syntax: wsk activation logs <action ID>
 	Sample Command: wsk activation logs f4df0d1dcb12488396978d2cda832b09
 
-
-
 Automate the invocation
 	
 The moment the action was invoked, your Twitter account would have retweeted the five latest tweets that has the hashtag ‘#Serverless’ in it. However, this is still a manual invocation. For maximum impact, it would be better to automate the invocation process as well so that you can configure the action and forget it once and for all.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![capture3](https://user-images.githubusercontent.com/19647546/30533747-987bfe8a-9c78-11e7-9b4c-38f5796d2a63.PNG)
 
 Periodic trigger would be the best option. It triggers the action based on a specific time and will retweet the latest tweets with ‘#Serverless’ in it. One can either choose a pattern or write a cron expression.
 
- 
+![time](https://user-images.githubusercontent.com/19647546/30533764-b2c9d85c-9c78-11e7-8fff-8267e56fc65b.PNG)
 
-
+![time1](https://user-images.githubusercontent.com/19647546/30533769-b87c980c-9c78-11e7-8cf7-df42ab59a0c3.PNG)
  
 The above pattern will invoke the TweetBot action every weekday (Monday to Friday) every 6 hours keeping your twitter account live without your intervention!  
 
