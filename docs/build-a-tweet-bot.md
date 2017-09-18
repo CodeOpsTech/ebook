@@ -126,7 +126,7 @@ Now, save this Python code in a file named “__main__.py”. Create the “conf
 Once the wsk CLI (Command Line Interface) is installed and the zip file is ready, follow these steps:
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/19647546/30533462-0e66b4d4-9c77-11e7-88d9-e8a8502fdb77.PNG" />
+  <img src="https://user-images.githubusercontent.com/19647546/30534155-7b787118-9c7a-11e7-8cc5-22abd4a642a7.PNG" />
 </p>
 
 ### Step 1. Create & update an action:
