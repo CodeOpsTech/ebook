@@ -21,7 +21,13 @@ Serverless functions are designed to execute for short periods of time (e.g., ma
 
 * Embrace third-party services
 
-## Drawbacks of AWS Lambda
+## Benefits
+
+* Based on "pay as you go” model
+* Easy Scaling
+
+
+## Drawbacks
 
 * Vendor-lockin 
 It may appear that functions help avoid vendor lock-in because we are just writing code and executing them in functions. However, our applications are tied to the the services the functions depend on in the cloud, for example, S3 or DynamoDB. 
@@ -36,7 +42,8 @@ It may appear that functions help avoid vendor lock-in because we are just writi
 
 * One technique is to use base64 to convert json to binary and pass it along and pass it along as context data. There is a python base64 library which does that.
 
+* Limited Options:
+Despite availability of popular languages, not every language is supported. Although in AWS Lambda, one can still run non supportive languages by building Amazon Linux executables and use node.js to run them.
 
-
-
-
+* Dependency Issues:
+Code with third party dependencies should be uploaded with the dependencies, thus increasing the deployment package size. Once the package size increases, the time to build the container image also increases and this eventually increases the latency for warm invocations.
