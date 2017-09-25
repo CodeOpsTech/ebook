@@ -35,6 +35,13 @@ Serverless functions are designed to execute for short periods of time (e.g., ma
 
 ## Benefits
 
+* Simplifies deployment and packaging and eliminates the need for system administration.
+* Decreases the complexity of software.
+* Fits well with microservices(they can be implemented as functions).
+* Works with agile development and enables the developers to concentrate on code and deliver quickly.
+* Lesser cost to scale – the developers need not implement code to scale and the administrators need not upgrade the servers that are existing or add any additional servers.
+* Smaller development and operational costs.
+* Decreased time to market and faster software release.
 * Based on "pay as you go” model
 * Easy Scaling
 
